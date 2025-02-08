@@ -15,7 +15,10 @@ Ensure you have the following installed:
 ## Installation & Setup
 Follow these steps to set up and run the project locally 
 ```sh
+# Downloads the project for you locally
 git clone https://github.com/yourusername/personal-portfolio.git
+
+# Navigates into the downloaded project
 cd personal-portfolio
 ```
 
