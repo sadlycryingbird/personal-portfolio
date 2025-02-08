@@ -1,27 +1,33 @@
 # personal-portfolio
+This is a personal portfolio website built with Next.js and Typescript for self-learning and showcasing projects.
 
-personal portfolio website made using next.js, typescript for self learning
+## Technologies Used
+- Next.js (App Router)
+- Typescript
+- React
+- Node.js (for runtime)
 
-built with node version v23.7.0
+## Prerequisites
+Ensure you have the following installed:
+- Node.js (Recommended version v23.7.0)
+- npm
 
-## Installation & Setup (Run the commands listed below, in order)
+## Installation & Setup
+Follow these steps to set up and run the project locally
+```git clone https://github.com/yourusername/personal-portfolio.git
+cd personal-portfolio```
 
-# Clone repository
+## Install dependencies
+`npm install`
 
-git clone https://github.com/yourusername/personal-portfolio.git
+## Run the development server
+`npm run dev`
 
-# Navigate into the projects directory
+## Open in Browser
+`open http://localhost:3000`
+If the port is already in use, check your terminal for the actual URL and copy + paste it into your browser
 
-cd personal-portfolio
+## Project Status
+This portfolio is still a work in progress. More features and improvements will be added over time.
 
-# Install dependencies
-
-npm install
-
-# Run the development server
-
-npm run dev
-
-Then open http://localhost:3000 in browser, keep in mind the port (last four digits) may be different so copy and paste from your console
-
-Application is still in development
+Feel free to contribute or provide feedback!
