@@ -13,9 +13,10 @@ Ensure you have the following installed:
 - npm
 
 ## Installation & Setup
-Follow these steps to set up and run the project locally
-```git clone https://github.com/yourusername/personal-portfolio.git
-cd personal-portfolio```
+Follow these steps to set up and run the project locally ```sh
+git clone https://github.com/yourusername/personal-portfolio.git
+cd personal-portfolio
+```
 
 ## Install dependencies
 `npm install`
