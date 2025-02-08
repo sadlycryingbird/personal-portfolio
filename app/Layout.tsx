@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import Navbar from "@/Components/Navbar";
-import Footer from "@/Components/Footer";
+import Navbar from "@/components/Navbar"; 
+import Footer from "@/components/Footer";
 import "@/styles/globals.css"; 
 
 // The Global Layout which is used for the entire site
