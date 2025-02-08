@@ -13,21 +13,23 @@ Ensure you have the following installed:
 - npm
 
 ## Installation & Setup
-Follow these steps to set up and run the project locally ```
-```sh git clone https://github.com/yourusername/personal-portfolio.git
+Follow these steps to set up and run the project locally 
+```sh
+git clone https://github.com/yourusername/personal-portfolio.git
 cd personal-portfolio
 ```
 
-## Install dependencies
-`npm install`
+## Running the project
+```sh
+# Install dependencies
+npm install
 
-## Run the development server
-`npm run dev`
+# Start the development server
+npm run dev
 
-## Open in Browser
-`open http://localhost:3000`
-If the port is already in use, check your terminal for the actual URL and copy + paste it into your browser
-
+# Open in browser (for macOS users)
+open http://localhost:3000
+```
 ## Project Status
 This portfolio is still a work in progress. More features and improvements will be added over time.
 
