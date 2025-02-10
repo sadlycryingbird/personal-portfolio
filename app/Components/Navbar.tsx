@@ -9,9 +9,9 @@ export default function Navbar() {
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link href="/">Home</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/projects">Projects</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li className={styles.navItem}><Link href="/about">About</Link></li>
+          <li className={styles.navItem}><Link href="/projects">Projects</Link></li>
+          <li className={styles.navItem}><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>
     );

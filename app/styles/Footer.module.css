@@ -1,0 +1,48 @@
+/* Footer.module.css */
+.footer {
+    background-color: #111;  /* Dark footer background */
+    color: #fff;  /* White text */
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 3px solid #4da6ff; /* Add a blue accent line at the top */
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    opacity: 0.8; /* Slight fade to separate from links */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer li {
+    display: inline;
+}
+
+.footer a {
+    color: #4da6ff; /* Light blue links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.footer a:hover {
+    color: #80c1ff; /* Even lighter blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    .footer ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
