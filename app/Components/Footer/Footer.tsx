@@ -1,10 +1,8 @@
 "use client";
 
-import styles from "../styles/Footer.module.css";
-
 export default function Footer() {
     return (
-        <footer className={styles.footer} role='contentinfo'>
+        <footer>
             <p>© {new Date().getFullYear()} Khizr Fazal. All rights reserved.</p>
             <ul>
                 <li>
