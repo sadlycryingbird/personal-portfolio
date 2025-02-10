@@ -5,7 +5,7 @@ import styles from "../styles/Navbar.module.css";
 
 export default function Navbar() {
     return (
-      <nav className={styles.navbar}>
+      <nav className={styles.navbar} role='banner'>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link href="/">Home</Link></li>
