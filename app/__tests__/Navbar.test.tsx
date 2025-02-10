@@ -2,18 +2,25 @@ import { render, screen } from '@testing-library/react';
 import Navbar from '../components/Navbar'; 
 
 
-it('should render the correct text in the navigation bar', () => {
-    render(<Navbar />)
+describe('Navbar', () => {
+    const navLinks: Record<string, string> = {
+        'About': '/about',
+        'Home': '/',
+        'Projects': '/projects',
+        'Contact': '/contact',
+    };
 
-    const aboutElem = screen.getByText('About');
-    const homeElem = screen.getByText('Home');
-    const projectsElem = screen.getByText('Projects');
-    const contactElem = screen.getByText('Contact');
+    //it.each() used for readability, DRY approach
+    it.each(Object.entries(navLinks))('should render the "%s" link with href "%s"', (linkText, expectedHref) => {
+        render(<Navbar />);
 
-    
-    expect(aboutElem).toBeInTheDocument(); 
-    expect(homeElem).toBeInTheDocument(); 
-    expect(projectsElem).toBeInTheDocument(); 
-    expect(contactElem).toBeInTheDocument(); 
+        // Find the link by role and text
+        const linkElement = screen.getByRole('link', { name: linkText });
 
-})
+        // Verify the link is in the document
+        expect(linkElement).toBeInTheDocument();
+
+        // Check if the link has the correct href
+        expect(linkElement).toHaveAttribute('href', expectedHref);
+    });
+});
