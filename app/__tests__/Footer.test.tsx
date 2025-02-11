@@ -1,9 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import Footer from '../components/Footer';
 import '@testing-library/jest-dom';
-import { ObjectFlags } from 'typescript';
 
-describe('Footer', () => {
+describe('Footer Component', () => {
   it('should display the correct copyright text', () => {
     render(<Footer />);
     

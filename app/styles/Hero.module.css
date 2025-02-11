@@ -1,0 +1,59 @@
+/* Hero.module.css */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh; /* Ensure it takes the full viewport height */
+    width: 100vw; /* Ensures it spans the full viewport width */
+    background-color: #111; /* Same as Footer & Navbar */
+    color: #fff; /* White text */
+    padding: 1.5rem 0;
+    margin: 0; 
+    position: relative; 
+    left: 0;
+}
+
+/* Ensure the content inside Hero is properly aligned */
+.heroContainer {
+    max-width: 1200px; 
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    top: -140px; 
+}
+
+/* Title styles */
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Subtitle styles */
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Call-to-Action Button */
+.cta {
+    display: inline-block;
+    padding: 0.6rem 1.2rem; 
+    font-size: 1rem; 
+    background-color: #4da6ff; 
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+    max-width: 200px; 
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: #80c1ff; /* Lighter blue on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}

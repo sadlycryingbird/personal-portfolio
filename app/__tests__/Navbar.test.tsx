@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Navbar from '../components/Navbar'; 
 import '@testing-library/jest-dom';
 
-describe('Navbar', () => {
+describe('Navbar Component', () => {
     const navLinks: Record<string, string> = {
         'About': '/about',
         'Home': '/',
