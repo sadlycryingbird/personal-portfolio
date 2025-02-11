@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center; /* Center the footer content */
     border-top: 3px solid #4da6ff; /* Add a blue accent line at the top */
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
