@@ -9,7 +9,7 @@ export default function Contact() {
       <p className={styles.subtitle}>Feel free to reach out to me!</p>
       <div className={styles.links}>
         <a href="mailto:khizr1998@gmail.com" className={styles.link}>
-          Email: khizr1998@gmail.com
+          Email
         </a>
         <a href="https://linkedin.com/in/khizr-fazal" target="_blank" rel="noopener noreferrer" className={styles.link}>
           LinkedIn
