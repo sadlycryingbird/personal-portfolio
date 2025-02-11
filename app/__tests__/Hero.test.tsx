@@ -15,10 +15,10 @@ describe('Hero Component', () => {
     });
     it('should render the button with correct text and link', () => {
         render(<Hero/>);
-                // Find the link by role and text
-                const viewMyWorkButton = screen.getByRole('link', { name: 'View My Work' });
-                expect(viewMyWorkButton).toBeInTheDocument();
-                expect(viewMyWorkButton).toHaveAttribute('href','/projects');
+        // Find the link by role and text
+        const viewMyWorkButton = screen.getByRole('link', { name: 'View My Work' });
+        expect(viewMyWorkButton).toBeInTheDocument();
+        expect(viewMyWorkButton).toHaveAttribute('href','/projects');
     })
 
 });
