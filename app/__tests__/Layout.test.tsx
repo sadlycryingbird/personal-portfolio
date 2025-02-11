@@ -1,16 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import Layout from '../layout'; // Adjust the path if needed
+import Layout from '../components/Layout'; // Adjust the path if needed
 import '@testing-library/jest-dom';
 
 // Mock child component
 const MockChild = () => <div data-testid="mock-child">Mock Content</div>;
 
-describe('Layout', () => {
+describe('Layout Component', () => {
   it('should render Navbar, children, and Footer in correct order', () => {
     render(
       <Layout>
         <MockChild />
       </Layout>
+      
     );
 
     // Ensure Navbar exists
