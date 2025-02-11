@@ -1,0 +1,71 @@
+/* About.module.css */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    min-height: 100vh; /* Ensure full-page height */
+    width: 100vw; /* Ensure full width */
+    background-color: #111; /* Dark background to match other sections */
+    color: #fff; /* White text */
+    padding: 1.5rem 0;
+    margin: 0; /* Removes unwanted spacing */
+}
+
+/* Container to limit content width */
+.aboutContainer {
+    max-width: 800px; /* Adjust width */
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Scoped h1/h2 styling */
+.aboutContainer h1, .aboutContainer h2 {
+    color: #4da6ff;
+    margin-bottom: 1rem;
+    padding: 0 20px; /* Keep inner padding for readability */
+}
+
+/* Paragraphs */
+.aboutContainer p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* List Styling */
+.aboutContainer ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.aboutContainer li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Contact Links */
+.aboutLinks {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.aboutLinks a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.aboutLinks a:hover {
+    color: #80c1ff;
+    transform: scale(1.1);
+}

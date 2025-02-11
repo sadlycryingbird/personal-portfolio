@@ -18,7 +18,7 @@ describe('Layout Component', () => {
     const navbar = screen.getByRole('banner'); // Assuming <nav role="banner">
     expect(navbar).toBeInTheDocument();
 
-    // Ensure MockChild (Children) exists
+    // Ensure all middle pages exists
     const child = screen.getByTestId('mock-child');
     expect(child).toBeInTheDocument();
 
