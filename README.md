@@ -22,7 +22,10 @@ git clone https://github.com/yourusername/personal-portfolio.git
 cd personal-portfolio
 ```
 
-## Running the project
+## Currently In Production
+https://personal-portfolio-eight-vert.vercel.app/
+
+## Running the project locally
 ```sh
 # Install dependencies
 npm install
@@ -34,6 +37,6 @@ npm run dev
 open http://localhost:3000
 ```
 ## Project Status
-This portfolio is still a work in progress. More features and improvements will be added over time.
+This portfolio is currently in production. However, more features and improvements will be added over time.
 
 Feel free to contribute or provide feedback!
