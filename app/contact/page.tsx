@@ -1,7 +1,7 @@
-import Contact from "@/components/Contact";
-import Layout from "@/components/Layout";
+import Contact from "../../app/components/Contact";
+import Layout from "../../app/components/Layout";
 
-export default function AboutPage() {
+export default function ContactPage() {
     return (
         <Layout>
             <Contact />

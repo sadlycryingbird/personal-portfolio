@@ -1,7 +1,7 @@
-import Projects from "@/components/Projects";
-import Layout from "@/components/Layout";
+import Projects from "../../app/components/Projects";
+import Layout from "../../app/components/Layout";
 
-export default function AboutPage() {
+export default function ProjectPage() {
     return (
         <Layout>
             <Projects />

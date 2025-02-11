@@ -14,9 +14,9 @@
       "isolatedModules": true,
       "jsx": "preserve",
       "incremental": true,
-      "baseUrl": ".",  // ✅ Ensures absolute imports work correctly
-      "paths": {        // ✅ Supports `@/` alias for cleaner imports
-        "@/*": ["./app/*"]
+      "baseUrl": ".", 
+      "paths": {
+        "@/*": ["./*"]
       },
       "plugins": [
         { "name": "next" }
