@@ -5,12 +5,12 @@ import '@testing-library/jest-dom';
 describe('Hero Component', () => {
     it('should render the main heading properly', () => {
         render(<Hero />);
-        const heading = screen.getByRole("heading", { name: /hi, i'm khizr fazal/i });
+        const heading = screen.getByRole("heading", { name: /hi, i'm khizr/i });
         expect(heading).toBeInTheDocument();
     });
     it('should render the subheading properly', () => {
         render(<Hero />);
-        const subheading = screen.getByText(/junior developer \| next\.js & typescript enthusiast/i);
+        const subheading = screen.getByText(/junior full-stack developer/i);
         expect(subheading).toBeInTheDocument();
     });
     it('should render the button with correct text and link', () => {
