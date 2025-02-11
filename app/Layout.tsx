@@ -1,7 +1,11 @@
-import { ReactNode } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import './globals.css';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My Portfolio",
+  description: "Khizr Fazal's Developer Portfolio",
+};
+
 
 // The Global Layout which is used for the entire site
 export default function RootLayout({ children }: { children: React.ReactNode }) {
