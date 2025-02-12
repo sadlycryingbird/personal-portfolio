@@ -3,13 +3,9 @@ import Contact from '../components/Contact';
 import '@testing-library/jest-dom';
 
 describe('Contact Component', () => {
-    it("renders the Contact section title correctly", () => {
+    it("renders Get in Touch correctly", () => {
         render(<Contact />);
         expect(screen.getByRole("heading", { level: 2, name: /Get in Touch/i })).toBeInTheDocument();
-    });
-   it("renders all lines of text correctly", () => {
-        render(<Contact />);
-        expect(screen.getByText(/Feel free to reach out to me!/i)).toBeInTheDocument();
     });
     it('should render the Email button with correct text and link', () => {
         render(<Contact />);

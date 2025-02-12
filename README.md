@@ -39,4 +39,6 @@ open http://localhost:3000
 ## Project Status
 This portfolio is currently in production. However, more features and improvements will be added over time.
 
+Access here https://personal-portfolio-eight-vert.vercel.app/
+
 Feel free to contribute or provide feedback!

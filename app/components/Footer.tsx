@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        <p>© {new Date().getFullYear()} Khizr Fazal. All rights reserved.</p>
         <ul>
           <li>
             {/* External links should use <a> */}
@@ -23,6 +22,7 @@ export default function Footer() {
             <Link href="/contact">Contact</Link>
           </li>
         </ul>
+        <p>© {new Date().getFullYear()} Khizr Fazal. All rights reserved.</p>
       </div>
     </footer>
   );
