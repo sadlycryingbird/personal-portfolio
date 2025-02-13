@@ -8,7 +8,7 @@ export default function About() {
         <p>
           Hi, I'm <strong>Khizr</strong>, an Associate Developer with 15 months of
           experience (across three teams) in back-end, cloud development and front-end. I'm currently seeking a
-          <strong> Junior Backend Developer role</strong> in London (remote or hybrid).
+          <strong> Junior Software Developer role</strong> in London (remote or hybrid).
         </p>
         
         <h2>My Experience</h2>
@@ -16,18 +16,17 @@ export default function About() {
           Over the past 15 months, I've worked with:
         </p>
         <ul>
-          <li><strong>AWS Lambda & Step Functions</strong> - Building microservices for serverless applications.</li>
-          <li><strong>Next.js & Node.js</strong> - Developing full-stack applications.</li>
-          <li><strong>TypeScript & Java</strong> - Creating scalable backend systems.</li>
-          <li><strong>Spring Boot</strong> - Building backend APIs.</li>
+          <li><strong>AWS Lambda & Step Functions</strong> - Building microservices for serverless applications using Node.js and TypeScript</li>
+          <li><strong>Next.js & TypeScript</strong> - Developing Next.js Front-end components with unit tests written in Jest</li>
+          <li><strong>Java & Spring Boot</strong> - Maintaining & improving upon scalable backend systems</li>
+          <li><strong>Three Different Teams</strong> - Worked across various projects gaining familiarity with onboarding processes and stronger soft skills</li>
         </ul>
         
         <h2>What I'm Looking For</h2>
         <p>
           With <strong>three months left in my current role</strong>, I'm actively searching
-          for a <strong>Junior Backend Developer</strong> position where I can continue
-          growing my expertise in backend development, cloud computing, and
-          distributed systems.
+          for a <strong>Junior Software Developer</strong> position where I can continue
+          growing my exposure to various technologies, and learning more about them!
         </p>
         
         <h2>Let's Connect</h2>
