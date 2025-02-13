@@ -16,10 +16,10 @@ export default function About() {
           Over the past 15 months, I've worked with:
         </p>
         <ul>
-          <li><strong>AWS Lambda & Step Functions</strong> - Building microservices for serverless applications using Node.js and TypeScript</li>
-          <li><strong>Next.js & TypeScript</strong> - Developing Next.js Front-end components with unit tests written in Jest</li>
+          <li><strong>AWS Lambda & Step Functions</strong> - Building microservices for serverless applications using Node.js</li>
+          <li><strong>Next.js & TypeScript</strong> - Developing front-end components and writing comprehensive unit tests using Jest</li>
           <li><strong>Java & Spring Boot</strong> - Maintaining & improving upon scalable backend systems</li>
-          <li><strong>Three Different Teams</strong> - Worked across various projects gaining familiarity with onboarding processes and stronger soft skills</li>
+          <li><strong>Three Teams</strong> - Worked across various projects gaining familiarity with onboarding processes and stronger soft skills</li>
         </ul>
         
         <h2>What I'm Looking For</h2>
