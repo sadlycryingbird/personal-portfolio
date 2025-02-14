@@ -19,7 +19,7 @@ export default function About() {
           <li><strong>AWS Lambda & Step Functions</strong> - Building microservices for serverless applications using Node.js</li>
           <li><strong>Next.js & TypeScript</strong> - Developing front-end components and writing comprehensive unit tests using Jest</li>
           <li><strong>Java & Spring Boot</strong> - Maintaining & improving upon scalable backend systems</li>
-          <li><strong>Three Teams</strong> - Worked across various projects gaining familiarity with onboarding processes and stronger soft skills</li>
+          <li><strong>Multiple Teams</strong> - Worked across various projects gaining familiarity with onboarding processes and stronger soft skills</li>
         </ul>
         
         <h2>What I'm Looking For</h2>
