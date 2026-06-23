@@ -23,9 +23,6 @@ describe("About Page", () => {
       screen.getByText(/Software Developer with over 2.5 years/i)
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/Since November 2023, I’ve contributed/i)
-    ).toBeInTheDocument();
-    expect(
       screen.getByText(/open to new opportunities/i)
     ).toBeInTheDocument();
   });

@@ -16,10 +16,6 @@ export default function About() {
         </p>
 
         <h2>My Experience</h2>
-        <p>
-          Since November 2023, I’ve contributed to multiple projects and teams, gaining
-          strong technical and collaborative skills:
-        </p>
         <ul>
           <li><strong>Java & Spring Boot</strong> – Designed and maintained scalable backend services, implemented RBAC features, and improved Redis usage for performance.</li>
           <li><strong>Next.js & TypeScript</strong> – Built reusable front‑end components, App Router layouts, and comprehensive test suites with Jest/React Testing Library.</li>
