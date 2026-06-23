@@ -5,5 +5,10 @@ html, body {
     width: 100vw;
     overflow-x: hidden; /* Prevents horizontal scrolling */
     font-family: 'Roboto', sans-serif; /* Apply Roboto font globally */
-  }
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0070f3;
+}
   
