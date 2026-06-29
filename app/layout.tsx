@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 export const metadata: Metadata = {
-  title: default: "Khizr Fazal | Software Engineer",
+  title: "Khizr Fazal | Software Engineer",
   description: "Backend-focused software engineer specialising in Java, Spring Boot, PostgreSQL, Next.js and TypeScript.",
 };
 
