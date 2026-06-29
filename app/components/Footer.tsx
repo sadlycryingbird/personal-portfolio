@@ -7,8 +7,7 @@ export default function Footer() {
       <div className={styles.footerContainer}>
         <ul>
           <li>
-            {/* External links should use <a> */}
-            <a href="https://github.com/sadlycryingbird" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/khizrfazal" target="_blank" rel="noopener noreferrer">
               Github
             </a>
           </li>
@@ -18,7 +17,6 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            {/* Internal links should use <Link> */}
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

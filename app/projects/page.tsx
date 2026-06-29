@@ -5,7 +5,7 @@ export default function ProjectsPage() {
       {
         title: "World Builder",
         description: "A story-building tool for creating worlds, characters, relationships, and lore",
-        github: "https://github.com/sadlycryingbird/world-builder",
+        github: "https://github.com/khizrfazal/world-builder",
         status: "In Development",
       },
       // Future projects will be added here

@@ -12,7 +12,7 @@ export default function ContactPage() {
             <a href="https://linkedin.com/in/khizr-fazal" target="_blank" rel="noopener noreferrer" className={styles.link}>
               LinkedIn
             </a>
-            <a href="https://github.com/sadlycryingbird/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+            <a href="https://github.com/khizrfazal/" target="_blank" rel="noopener noreferrer" className={styles.link}>
               GitHub
             </a>
           </div>

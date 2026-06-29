@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sadlycryingbird/personal-portfolio.git"
+    "url": "git+https://github.com/khizrfazal/personal-portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sadlycryingbird/personal-portfolio/issues"
+    "url": "https://github.com/khizrfazal/personal-portfolio/issues"
   },
-  "homepage": "https://github.com/sadlycryingbird/personal-portfolio#readme",
+  "homepage": "https://github.com/khizrfazal/personal-portfolio#readme",
   "dependencies": {
     "next": "^16.2.9",
     "react": "^19.0.0",
