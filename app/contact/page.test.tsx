@@ -5,7 +5,6 @@ import "@testing-library/jest-dom";
 describe("Contact Page", () => {
   it("renders main heading", () => {
     render(<ContactPage />);
-
     expect(
       screen.getByRole("heading", { name: /get in touch/i })
     ).toBeInTheDocument();
@@ -21,7 +20,6 @@ describe("Contact Page", () => {
 
   it("renders email link correctly", () => {
     render(<ContactPage />);
-
     const email = screen.getByRole("link", { name: /email/i });
     expect(email).toHaveAttribute(
       "href",
@@ -31,7 +29,6 @@ describe("Contact Page", () => {
 
   it("renders LinkedIn link correctly", () => {
     render(<ContactPage />);
-
     const linkedin = screen.getByRole("link", { name: /linkedin/i });
     expect(linkedin).toHaveAttribute(
       "href",
@@ -41,7 +38,6 @@ describe("Contact Page", () => {
 
   it("renders GitHub link correctly", () => {
     render(<ContactPage />);
-
     const github = screen.getByRole("link", { name: /github/i });
     expect(github).toHaveAttribute(
       "href",

@@ -7,7 +7,7 @@ export default function AboutPage() {
         <h1>About Me</h1>
 
         <p className={styles.intro}>
-          I'm <strong>Khizr Fazal</strong>, a software engineer with over 2.5
+          I'm <strong>Khizr</strong>, a software engineer with over 2.5
           years of experience building and maintaining production full-stack
           applications. My primary focus is backend development with Java and
           Spring Boot, alongside building modern web applications using Next.js
