@@ -1,59 +1,154 @@
-/* Hero.module.css */
 .hero {
+    background: #111;
+    color: white;
+
+    min-height: calc(100vh - 72px);
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 120vh; /* Ensure it takes the full viewport height */
-    width: 100vw; /* Ensures it spans the full viewport width */
-    background-color: #111; /* Same as Footer & Navbar */
-    color: #fff; /* White text */
-    padding: 1.5rem 0;
-    margin: 0; 
-    position: relative; 
-    left: 0;
+
+    padding: 2rem;
 }
 
-/* Ensure the content inside Hero is properly aligned */
 .heroContainer {
-    max-width: 1200px; 
-    width: 100%;
+    max-width: 760px;
+
     text-align: center;
-    padding: 0 20px;
-    position: relative;
-    top: -140px; 
+
+    transform: translateY(-50px);
 }
 
-/* Title styles */
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+.heroContainer h1 {
+    margin: 0;
+
+    font-size: 4.2rem;
+    font-weight: 700;
+
+    letter-spacing: -2px;
 }
 
-/* Subtitle styles */
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-}
+.heroContainer h2 {
+    margin: 1rem 0 1.75rem;
 
-/* Call-to-Action Button */
-.cta {
-    display: inline-block;
-    padding: 0.6rem 1.2rem; 
-    font-size: 1rem; 
-    background-color: #4da6ff; 
-    color: white;
-    text-decoration: none;
+    font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
-    max-width: 200px; 
-    text-align: center;
+
+    color: #4da6ff;
 }
 
-.cta:hover {
-    background-color: #80c1ff; /* Lighter blue on hover */
-    transform: scale(1.05); /* Subtle hover effect */
+.description {
+    max-width: 680px;
+
+    margin: 0 auto 2.5rem;
+
+    color: #bdbdbd;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.techStack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: .8rem;
+
+    margin-bottom: 3rem;
+}
+
+.techStack span {
+    padding: .55rem 1rem;
+
+    background: #1b1b1b;
+
+    border: 1px solid #2d2d2d;
+
+    border-radius: 999px;
+
+    color: #4da6ff;
+
+    font-size: .95rem;
+    font-weight: 500;
+
+    transition: all .2s ease;
+}
+
+.techStack span:hover {
+    border-color: #4da6ff;
+    transform: translateY(-2px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+    padding: .95rem 2rem;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all .2s ease;
+}
+
+.primaryButton {
+    background: #4da6ff;
+    color: white;
+}
+
+.primaryButton:hover {
+    background: #67b3ff;
+    transform: translateY(-2px);
+}
+
+.secondaryButton {
+    color: white;
+
+    border: 1px solid #333;
+}
+
+.secondaryButton:hover {
+    border-color: #4da6ff;
+    color: #4da6ff;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .heroContainer {
+        transform: none;
+    }
+
+    .heroContainer h1 {
+        font-size: 3rem;
+    }
+
+    .heroContainer h2 {
+        font-size: 1.35rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primaryButton,
+    .secondaryButton {
+        width: 220px;
+        text-align: center;
+    }
 }

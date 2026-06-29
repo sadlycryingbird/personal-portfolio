@@ -1,46 +1,58 @@
-/* Contact.module.css */
 .contact {
-    text-align: center;
-    padding: 9rem 0;
-    background-color: #111;
+    background: #111;
     color: white;
-    margin-bottom: 0; /* Remove extra space below */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 50vh;
+    min-height: 100vh;
+    padding: 4rem 1.5rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.subtitle {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 1.5rem;
+.description {
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 3rem;
 }
 
-.links {
+.cards {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
-.link {
-    color: #4da6ff;
+.card {
+    display: block;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease-in-out;
+    color: white;
+
+    background: #1b1b1b;
+    border: 1px solid #2a2a2a;
+
+    padding: 1.5rem;
+    border-radius: 12px;
+
+    transition: all .2s ease;
 }
 
-.link:hover {
-    color: #80c1ff;
+.card:hover {
+    border-color: #4da6ff;
+    transform: translateY(-2px);
 }
 
-.footer {
-    margin-top: 0 !important;
-    padding-top: 2rem; /* Adjust if necessary */
+.card h3 {
+    margin: 0 0 .5rem 0;
+    color: #4da6ff;
+}
+
+.card p {
+    margin: 0;
+    color: #ccc;
 }

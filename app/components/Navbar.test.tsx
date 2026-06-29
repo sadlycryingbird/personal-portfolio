@@ -1,37 +1,39 @@
-import { render, screen } from '@testing-library/react';
-import Navbar from '../components/Navbar'; 
-import '@testing-library/jest-dom';
-import { usePathname } from 'next/navigation';
+import { render, screen } from "@testing-library/react";
+import Navbar from "../components/Navbar";
+import "@testing-library/jest-dom";
+import { usePathname } from "next/navigation";
 
-// Mock usePathname so we can simulate different routes
-jest.mock('next/navigation', () => ({
+jest.mock("next/navigation", () => ({
   usePathname: jest.fn(),
 }));
 
-describe('Navbar Component', () => {
+describe("Navbar Component", () => {
   const navLinks: Record<string, string> = {
-    'Home': '/',
-    'About': '/about',
-    'Projects': '/projects',
-    'Contact': '/contact',
+    Home: "/",
+    About: "/about",
+    Projects: "/projects",
+    Contact: "/contact",
   };
 
   it.each(Object.entries(navLinks))(
-    'should render the "%s" link with href "%s"',
-    (linkText, expectedHref) => {
-      (usePathname as jest.Mock).mockReturnValue('/'); // default route
+    "renders %s link with correct href",
+    (text, href) => {
+      (usePathname as jest.Mock).mockReturnValue("/");
       render(<Navbar />);
-      const linkElement = screen.getByRole('link', { name: linkText });
-      expect(linkElement).toBeInTheDocument();
-      expect(linkElement).toHaveAttribute('href', expectedHref);
+
+      const link = screen.getByRole("link", { name: text });
+
+      expect(link).toHaveAttribute("href", href);
     }
   );
 
-  it('applies the active class to the current route', () => {
-    (usePathname as jest.Mock).mockReturnValue('/about');
+  it("highlights active route", () => {
+    (usePathname as jest.Mock).mockReturnValue("/about");
     render(<Navbar />);
-    const activeLink = screen.getByRole('link', { name: 'About' });
-    expect(activeLink).toHaveClass('active');
-    expect(activeLink).toHaveAttribute('aria-current', 'page');
+
+    const active = screen.getByRole("link", { name: /about/i });
+
+    expect(active).toHaveClass("active");
+    expect(active).toHaveAttribute("aria-current", "page");
   });
 });

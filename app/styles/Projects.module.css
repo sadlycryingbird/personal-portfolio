@@ -1,90 +1,171 @@
 .projects {
-    padding: 2rem 0; /* Reduce padding to move content higher */
-    background-color: #111;
-    text-align: center;
+    background: #111;
     color: white;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content towards the top */
     min-height: 100vh;
-    padding-top: 3rem; /* Adjust top padding to control position */
+    padding: 4rem 1.5rem;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .title {
-    font-size: 2.5rem;
-    font-weight: bold;
+    text-align: center;
+
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 2rem;
+    margin: 0 auto 4rem;
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .projectCard {
-    background-color: #222;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #333;
+    background: #181818;
+
+    border: 1px solid #2d2d2d;
+    border-radius: 14px;
+
+    padding: 2rem;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    transition: all .2s ease;
+}
+
+.projectCard:hover {
+    border-color: #4da6ff;
+    transform: translateY(-4px);
+}
+
+.status {
+    display: inline-block;
+
+    align-self: flex-start;
+
+    margin-bottom: 1rem;
+
+    padding: .35rem .8rem;
+
+    border-radius: 999px;
+
+    background: rgba(77,166,255,.15);
+
+    color: #4da6ff;
+
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .projectTitle {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .projectDescription {
-    font-size: 1rem;
-    color: #bbb;
-    margin-bottom: 1rem;
+    color: #c3c3c3;
+
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
 }
 
-.projectStatus {
-    margin-top: 1rem;
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: .75rem;
+
+    margin-bottom: 2rem;
 }
 
-.comingSoon {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    background-color: #ffcc00;
-    color: black;
-    font-weight: bold;
-    border-radius: 5px;
+.techStack span {
+    background: #1d1d1d;
+
+    border: 1px solid #2e2e2e;
+
+    color: #4da6ff;
+
+    padding: .55rem 1rem;
+
+    border-radius: 999px;
+
+    font-size: .9rem;
+    font-weight: 500;
+
+    transition: all .2s ease;
+}
+
+.techStack span:hover {
+    border-color: #4da6ff;
+    transform: translateY(-2px);
 }
 
 .githubButton {
     display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background-color: #4da6ff;
+
+    align-self: flex-start;
+
+    margin-top: auto;
+
     color: white;
-    font-weight: 600;
+    background: #4da6ff;
+
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 1rem;
+
+    padding: .9rem 1.5rem;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: all .2s ease;
 }
 
 .githubButton:hover {
-    background-color: #80c1ff;
+    background: #67b3ff;
+    transform: translateY(-2px);
 }
 
-.footer {
-    margin-top: 0 !important;
-    padding-top: 2rem;
+@media (max-width: 768px) {
+    .projects {
+        padding: 4rem 1.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .projectTitle {
+        font-size: 1.6rem;
+    }
+
+    .projectDescription {
+        font-size: 1rem;
+    }
+
+    .githubButton {
+        width: 100%;
+        text-align: center;
+    }
 }
