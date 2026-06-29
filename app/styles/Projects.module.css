@@ -8,11 +8,11 @@
 .container {
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .title {
     text-align: center;
-
     font-size: 3rem;
     margin-bottom: 1rem;
 }
@@ -23,26 +23,28 @@
     color: #bdbdbd;
     font-size: 1.1rem;
     line-height: 1.7;
+    max-width: 650px;
 }
 
 .grid {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .projectCard {
     background: #181818;
-
     border: 1px solid #2d2d2d;
     border-radius: 14px;
 
     padding: 2rem;
 
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
-
     text-align: left;
 
     transition: all .2s ease;
@@ -55,17 +57,14 @@
 
 .status {
     display: inline-block;
-
     align-self: flex-start;
 
     margin-bottom: 1rem;
 
     padding: .35rem .8rem;
-
     border-radius: 999px;
 
     background: rgba(77,166,255,.15);
-
     color: #4da6ff;
 
     font-size: .9rem;
@@ -79,30 +78,23 @@
 
 .projectDescription {
     color: #c3c3c3;
-
     line-height: 1.8;
-
     margin-bottom: 2rem;
 }
 
 .techStack {
     display: flex;
     flex-wrap: wrap;
-
     gap: .75rem;
-
     margin-bottom: 2rem;
 }
 
 .techStack span {
     background: #1d1d1d;
-
     border: 1px solid #2e2e2e;
-
     color: #4da6ff;
 
     padding: .55rem 1rem;
-
     border-radius: 999px;
 
     font-size: .9rem;
@@ -118,7 +110,6 @@
 
 .githubButton {
     display: inline-block;
-
     align-self: flex-start;
 
     margin-top: auto;
@@ -129,7 +120,6 @@
     text-decoration: none;
 
     padding: .9rem 1.5rem;
-
     border-radius: 10px;
 
     font-weight: 600;
@@ -142,6 +132,7 @@
     transform: translateY(-2px);
 }
 
+/* MOBILE FIXES */
 @media (max-width: 768px) {
     .projects {
         padding: 4rem 1.5rem;
@@ -166,6 +157,9 @@
 
     .githubButton {
         width: 100%;
+        max-width: 100%;
+        display: block;
         text-align: center;
+        box-sizing: border-box;
     }
 }
