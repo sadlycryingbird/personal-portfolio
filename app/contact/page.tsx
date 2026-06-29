@@ -18,7 +18,7 @@ export default function ContactPage() {
             className={styles.card}
           >
             <h3>Email</h3>
-            <p>khizr1998@gmail.com</p>
+            <p>Khizr1998@gmail.com</p>
           </a>
           <a
             href="https://linkedin.com/in/khizr-fazal"
@@ -27,7 +27,7 @@ export default function ContactPage() {
             className={styles.card}
           >
             <h3>LinkedIn</h3>
-            <p>linkedin.com/in/khizr-fazal</p>
+            <p>Linkedin.com/in/khizr-fazal</p>
           </a>
           <a
             href="https://github.com/khizrfazal"
@@ -36,7 +36,7 @@ export default function ContactPage() {
             className={styles.card}
           >
             <h3>GitHub</h3>
-            <p>github.com/khizrfazal</p>
+            <p>Github.com/khizrfazal</p>
           </a>
         </div>
       </div>
